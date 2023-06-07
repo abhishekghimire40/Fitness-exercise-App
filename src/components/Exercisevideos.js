@@ -36,6 +36,7 @@ const Exercisevideos = ({ exerciseVideos, name }) => {
             <img
               src={item?.video?.thumbnails[0]?.url}
               alt={item?.video?.title}
+              style={{ borderRadius: "10px" }}
             />
             <Box>
               <Typography variant="h5" color="#000">
@@ -43,7 +44,7 @@ const Exercisevideos = ({ exerciseVideos, name }) => {
                   ? item.video.title.slice(0, 50) + " ..."
                   : item.video.title}
               </Typography>
-              <Typography variant="h6" color="#000">
+              <Typography variant="h6" color="gray">
                 {item.video.channelName}
               </Typography>
             </Box>
