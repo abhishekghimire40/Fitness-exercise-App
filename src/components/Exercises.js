@@ -9,7 +9,6 @@ const Exercises = ({ exercises, bodyPart, setExercises }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const exercisesPerPage = 9;
   const indexOfLastExercise = currentPage * exercisesPerPage;
-  console.log(exercises);
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
   const currentExercises = exercises.slice(
     indexOfFirstExercise,
@@ -41,9 +40,8 @@ const Exercises = ({ exercises, bodyPart, setExercises }) => {
 
     fetchExerciseBodyPart();
   }, [bodyPart]);
-
   return (
-    <Box sx={{ mt: { lg: "110px" } }} mt="50px" p="20px">
+    <Box id="exercise" sx={{ mt: { lg: "110px" } }} mt="50px" p="20px">
       <Typography variant="h3" mb="46px">
         Showing results
       </Typography>

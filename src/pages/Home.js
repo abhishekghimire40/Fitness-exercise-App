@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Box } from "@mui/material";
 import HeroBanner from "../components/HeroBanner";
 import SearchExercises from "../components/SearchExercises";
 import Exercises from "../components/Exercises";
 
-import { exerciseOptions, fetchData } from "../utils/fetchData";
+// import { exerciseOptions, fetchData } from "../utils/fetchData";
 
 const Home = () => {
   const [bodyPart, setBodyPart] = useState("all");

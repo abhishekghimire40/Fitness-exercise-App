@@ -35,7 +35,16 @@ const Navbar = () => {
         </Link>
         <a
           href="#exercise"
-          style={{ textDecoration: "none", color: "#3A1212" }}
+          style={{
+            textDecoration: "none",
+            color: "#3A1212",
+          }}
+          onClick={(e) => {
+            e.preventDefault();
+            document.querySelector("#exercise").scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
         >
           Exercises
         </a>
