@@ -47,7 +47,9 @@ const ExerciseDetail = () => {
       setEquipmentExercises(equipmentExercisesData);
     };
     fetchExercisesData();
+    window.scrollTo(0, 0);
   }, [id]);
+
   return (
     <Box>
       <Detail exerciseDetail={exerciseDetail} />

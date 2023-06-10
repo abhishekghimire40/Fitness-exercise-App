@@ -5,6 +5,7 @@ import ExerciseCard from "./ExerciseCard";
 import { VisibilityContext, ScrollMenu } from "react-horizontal-scrolling-menu";
 import RightArrowIcon from "../assets/icons/right-arrow.png";
 import LeftArrowIcon from "../assets/icons/left-arrow.png";
+import { ArrowBack, ArrowForward } from "@mui/icons-material";
 
 const LeftArrow = () => {
   const { scrollPrev } = useContext(VisibilityContext);
@@ -33,6 +34,26 @@ const RightArrow = () => {
     </Typography>
   );
 };
+
+// function LeftArrow() {
+//   const { isFirstItemVisible, scrollPrev } = useContext(VisibilityContext);
+
+//   return (
+//     <ArrowBack disabled={isFirstItemVisible} onClick={() => scrollPrev()}>
+//       Left
+//     </ArrowBack>
+//   );
+// }
+
+// function RightArrow() {
+//   const { isLastItemVisible, scrollNext } = useContext(VisibilityContext);
+
+//   return (
+//     <ArrowForward disabled={isLastItemVisible} onClick={() => scrollNext()}>
+//       Right
+//     </ArrowForward>
+//   );
+// }
 
 const HorizontalScrollBar = ({ data, bodyPart, setBodyPart, isBodyParts }) => {
   return (

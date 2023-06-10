@@ -30,10 +30,16 @@ const HeroBanner = () => {
       <Button
         variant="contained"
         color="error"
-        href="#exercises"
+        href="#exercise"
         sx={{
           backgroundColor: "#ff2525",
           padding: "10px",
+        }}
+        onClick={(e) => {
+          e.preventDefault();
+          document.querySelector("#exercise").scrollIntoView({
+            behavior: "smooth",
+          });
         }}
       >
         Explore Exercises{" "}
